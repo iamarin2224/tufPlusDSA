@@ -25,5 +25,5 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 
 ## 🚀 About
 I’m Arin, a CSE undergrad from Jadavpur University, documenting my journey to master DSA step by step.  
-This repo will serve as a personal logbook and also help others following the same path
+This repo will serve as a personal logbook and also help others following the same path.
 
