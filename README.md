@@ -12,7 +12,8 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 - Binary Search  
 - Recursion  
 - Linked List  
-- Bit Manipulation (currently learning)
+- Bit Manipulation
+- Greedy Algorithm (currently learning)
 
 ---
 
