@@ -3,6 +3,7 @@ using namespace std;
 
 long long solve(vector<int>& bt) {
     if (bt.size() == 1) return 0L;
+    
     sort(bt.begin(), bt.end());
 
     int totalWait = 0;
