@@ -22,7 +22,7 @@ vector<int> JobScheduling(vector<vector<int>>& Jobs) {
     int profit = 0;
 
     for (int i=0; i<Jobs.size(); i++){
-        for (int j = Jobs[i][1]; j>=0; j--){
+        for (int j = Jobs[i][1]; j>=1; j--){
             if (hash[j] == -1){
                 cnt++;
                 hash[j] = Jobs[i][0];
