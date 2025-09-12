@@ -33,7 +33,7 @@ int longestOnes(vector<int>& nums, int k) {
 
     int l = 0, r = 0;
     int maxLen = 0;
-    int zeroes = k;
+    int zeroes = 0;
 
     while (r < n){
         if (nums[r] == 0){
