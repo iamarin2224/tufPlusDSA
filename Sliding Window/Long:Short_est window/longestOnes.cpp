@@ -44,7 +44,7 @@ int longestOnes(vector<int>& nums, int k) {
             if (nums[l] == 0){
                 zeroes--;
             }
-            l--;
+            l++;
         }
 
         if (zeroes <= k){
