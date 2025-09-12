@@ -6,18 +6,18 @@ int longestOnes(vector<int>& nums, int k) {
 
     int l = 0, r = 0;
     int maxLen = 0;
-    int curK = k;
+    int remainingFlips = k;
 
     while (r < n){
-        if (nums[r] == 0 && curK == 0){
-            while (curK == 0 && l<n){
-                if (nums[l] == 0) curK++;
+        if (nums[r] == 0 && remainingFlips == 0){
+            while (remainingFlips == 0 && l<n){
+                if (nums[l] == 0) remainingFlips++;
                 l++;
             }
-            curK--;
+            remainingFlips--;
         }
-        else if (nums[r] == 0 && curK != 0){
-            curK--;
+        else if (nums[r] == 0 && remainingFlips != 0){
+            remainingFlips--;
         }
         
         maxLen = max(maxLen, r-l+1);
