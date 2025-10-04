@@ -56,7 +56,7 @@ string minWindow(string s, string t) {
             
             hash[s[l]]++;
 
-            if (hash[s[r]] > 0) cnt--;
+            if (hash[s[l]] > 0) cnt--;
 
             l++;
         }
