@@ -13,7 +13,9 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 - Recursion  
 - Linked List  
 - Bit Manipulation
-- Greedy Algorithm (currently learning)
+- Greedy Algorithm 
+- Sliding Window
+- Stacks and Queues (currently learning)
 
 ---
 
