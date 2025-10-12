@@ -15,7 +15,7 @@ string postToInf(string postfix){
             string t1 = st.top(); st.pop();
             string t2 = st.top(); st.pop();
 
-            string t = "(" + t1 + c + t2 + ")";
+            string t = "(" + t2 + c + t1 + ")";
 
             st.push(t);
         }
@@ -25,7 +25,7 @@ string postToInf(string postfix){
 }
 
 int main() {
-    string postfix = "AB*C+";
+    string postfix = "ABCD^E-*+";
     cout << "Infix Expression: " << postToInf(postfix) << endl;
     return 0;
 }
