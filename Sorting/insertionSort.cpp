@@ -9,13 +9,15 @@ int main(){
         cin>>arr[i];
     }
 
-    int j;
-    for (int i=0; i<=n-1; i++){
+    int j, temp;
+    for (int i=1; i<=n-1; i++){
+        temp = arr[i];
         j = i;
-        while (j>0 && arr[j]<arr[j-1]){
-            swap(arr[j-1], arr[j]);
+        while (j>0 && arr[j-1]>temp){
+            arr[j] = arr[j-1];
             j--;
         }
+        arr[j] = temp;    
     }
 
     cout<<"The sorted array is: "<<endl;
