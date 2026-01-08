@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 //? Own Solution -> TC:O(2*n) SC:O(n)       (Hashing will have similar TC and SC)

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void swapIfGreater(vector<int>& nums1, vector<int>& nums2, int ind1, int ind2){
