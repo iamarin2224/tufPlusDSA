@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 //! This is the method to find "prime factors" not "prime factorization"

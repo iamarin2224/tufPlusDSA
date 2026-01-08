@@ -1,9 +1,9 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 vector<int> primeTillN(int n){
     //PreComputation
-    int prime[n+1] = {1};
+    int prime[n+1];
 
     for (int i=2; i<=n; i++) prime[i]=1;
 

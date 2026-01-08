@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 vector<int> primesInRange(vector<vector<int>>& queries){
