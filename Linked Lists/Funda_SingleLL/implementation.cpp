@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 //similar can be done using ~struct~ too, there everything is public by default
