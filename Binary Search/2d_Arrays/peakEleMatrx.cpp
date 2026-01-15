@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int maxCol(vector<vector<int>>& mat, int col, int r){
