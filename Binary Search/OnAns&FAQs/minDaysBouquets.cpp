@@ -1,15 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
-int maxArr(vector<int>& nums){
-    int maxN = INT_MIN;
-
-    for(int i=0; i<nums.size(); i++){
-        maxN = max(maxN, nums[i]);
-    }
-
-    return maxN;
-}
 
 int bouquetCount(vector<int>& nums, int k, int days){
     int curCount = 0, bqCount = 0;
@@ -33,7 +23,7 @@ int bouquetCount(vector<int>& nums, int k, int days){
 int roseGarden(int n, vector<int>& nums, int k, int m) {
     if (m*k > n) return -1;
 
-    int low = 1, high = maxArr(nums);
+    int low = 1, high = *max_element(nums.begin(), nums.end());
 
     int mid, ans = -1;
 

@@ -1,15 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
-int maxArr(vector<int>& nums){
-    int maxN = INT_MIN;
-
-    for(int i=0; i<nums.size(); i++){
-        maxN = max(maxN, nums[i]);
-    }
-
-    return maxN;
-}
 
 int sumAfterDiv(vector<int>& nums, int d){
     int sum = 0;
@@ -27,7 +17,7 @@ int sumAfterDiv(vector<int>& nums, int d){
 }
 
 int smallestDivisor(vector<int>& nums, int threshold) {
-    int maxN = maxArr(nums);
+    int maxN = *max_element(nums.begin(), nums.end());
 
     int low = 1, high = maxN, mid;
 

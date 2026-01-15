@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 bool isPossible(vector<int> &nums, int cows, int minDist){

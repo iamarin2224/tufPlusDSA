@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 double median(vector<int> &arr1, vector<int> &arr2) {

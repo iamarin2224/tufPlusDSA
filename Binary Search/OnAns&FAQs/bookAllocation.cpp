@@ -1,7 +1,8 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <numeric>
 using namespace std;
 
-int studentCount(vector<int> &nums, int m, int maxPages){
+int studentCount(vector<int> &nums, int maxPages){
     int studentCount = 1; //start with one student, as we alloting him pages
     int pageCount = 0;
 
@@ -28,7 +29,7 @@ int findPages(vector<int> &nums, int m)  {
     while (low <= high){
         mid = low + (high-low)/2;
 
-        int students = studentCount(nums, m, mid);
+        int students = studentCount(nums, mid);
 
         if (students > m){
             low = mid+1;

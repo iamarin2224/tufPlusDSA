@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 vector<int> getFloorAndCeil(vector<int> nums, int x) {

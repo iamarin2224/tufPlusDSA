@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int kthElement(vector<int> &a, vector<int>& b, int k) {
