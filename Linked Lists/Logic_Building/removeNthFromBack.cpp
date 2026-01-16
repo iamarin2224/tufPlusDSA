@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 struct ListNode
@@ -90,5 +90,4 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
     delete temp;
 
     return head;
-
 }
