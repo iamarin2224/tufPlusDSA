@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void func(vector<int>& nums, int ind, int sum, vector<int> &ans){
