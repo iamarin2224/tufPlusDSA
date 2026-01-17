@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void checker(vector<int> &nums, int sum, int ind, int &count){
