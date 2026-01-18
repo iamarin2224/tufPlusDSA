@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 bool isPlacingSafe(vector<vector<char>>& board, int row, int col, int num){
@@ -41,7 +41,7 @@ bool func(vector<vector<char>>& board, int row, int col){
     for (int num = 1; num <= 9; num++){
         if (isPlacingSafe(board, row, col, num)){
             board[row][col] = (char)((int)'0' + num);
-            if (func(board, row, col+1)) return true;
+            if (func(board, row, col+1)) return true; //if filled don't backtrack
             board[row][col] = '.';
         }
     }

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 bool isColouringSafe(int node, int col, vector<int> &colour, vector<int> adj[]){
@@ -38,7 +38,7 @@ bool graphColoring(vector<vector<int>> &edges, int m, int n) {
         adj[edges[i][1]].push_back(edges[i][0]);
     }
 
-    vector<int> colour(n, 0);
+    vector<int> colour(n, 0);   //list to hold which node is given which colour
 
     return func(0, n, m, colour, adj);
 }

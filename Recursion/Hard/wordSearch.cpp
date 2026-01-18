@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 bool func(vector<vector<char>> &board, string &word, int index, int row, int col){
@@ -36,7 +36,6 @@ bool func(vector<vector<char>> &board, string &word, int index, int row, int col
 
     board[row][col] = temp; //backtracking and undoing the change
     return false;
-
 }
 
 bool exist(vector<vector<char> >& board, string word) {

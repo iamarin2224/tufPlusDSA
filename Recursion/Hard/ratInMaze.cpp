@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void func(vector<vector<int>> &grid, string &path, vector<string> &ans, int row, int col){
@@ -48,7 +48,7 @@ vector<string> findPath(vector<vector<int>> &grid) {
 
     vector<string> ans = {};
 
-    if (grid[0][0] == 0 || grid[n-1][n-1]) return {};
+    if (grid[0][0] == 0 || grid[n-1][n-1] == 0 ) return {};
 
     string path = "";
 
