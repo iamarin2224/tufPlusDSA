@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 static bool cmp(vector<int> &m1, vector<int> &m2){

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int findMaximumCookieStudents(vector<int>& student, vector<int>& cookie){
