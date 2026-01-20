@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 //? My solution
@@ -11,7 +11,10 @@ int totalFruits(vector<int>& fruits){
     int maxLen = 0;
     int b1=-1, b2=-1;
 
-    int hash[n+1] = {0};
+    int hash[n+1];
+    for(int i=0; i<=n; i++){
+        hash[i] = 0;
+    }
 
     while (r < n){
         if (fruits[r] == b1){

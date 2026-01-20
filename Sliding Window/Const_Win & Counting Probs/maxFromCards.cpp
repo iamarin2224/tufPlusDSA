@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 //? First approach deprecated as, like we can't be sure whether taking the element based on cur left or right will be correct or not. Because if the current left is very small but the element just next to it might be very big
