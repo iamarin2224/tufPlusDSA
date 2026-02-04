@@ -25,11 +25,14 @@ class Node {
 class LRUCache {
     //hash map to store key-node pair
     unordered_map<int, Node*> mpp;
-    int cap;
+
     //dummy nodes for head and tail
     Node* head;
     Node* tail;
 
+    int cacheSize;
+
+    //insert always next to head, so that recent lies next to
     void insertNodeFront(Node* node){
         Node* nextNode = head->next;
 
@@ -50,9 +53,10 @@ class LRUCache {
     public:
 
     LRUCache(int capacity) {
-        cap = capacity;
+        cacheSize = capacity;
         mpp.clear(); //clean the existing map
 
+        //declare dummy nodes
         head = new Node();
         tail = new Node();
 
@@ -65,6 +69,7 @@ class LRUCache {
 
         Node* node = mpp[key_];
 
+        //modify its position in list by deleting existing and inserting fresh
         deleteNode(node);
         insertNodeFront(node);
 
@@ -72,17 +77,20 @@ class LRUCache {
     }
 
     void put(int key_, int value) {
+        //if key exist, just modify the value
         if (mpp.find(key_) != mpp.end()) {
             Node* node = mpp[key_];
             node->val = value;
 
+            //modifying its postion
             deleteNode(node);
             insertNodeFront(node);
 
             return;
         }
 
-        if (mpp.size() == cap){
+        //if full, delete the least recently -> from prev of tail
+        if (mpp.size() == cacheSize){
             Node* node = tail->prev;
 
             mpp.erase(node->key);
@@ -91,8 +99,8 @@ class LRUCache {
 
         Node* node = new Node(key_, value);
 
+        //insert the node in map and list
         mpp[key_] = node;
-
         insertNodeFront(node);
     }
 };
