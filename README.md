@@ -15,7 +15,8 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 - Bit Manipulation
 - Greedy Algorithm 
 - Sliding Window
-- Stacks and Queues (currently learning)
+- Stacks and Queues
+- Binary Trees (Currently Learning)
 
 ---
 
