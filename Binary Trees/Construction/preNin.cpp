@@ -16,10 +16,10 @@ TreeNode* recurBuild(vector<int>& preorder, int preStart, int preEnd, vector<int
     TreeNode* root = new TreeNode(preorder[preStart]);
 
     int inRoot = mpp[root->data];
-    int numsLeft = inRoot-inStart;
+    int nodesLeft = inRoot-inStart;
 
-    root->left = recurBuild(preorder, preStart+1, preStart+numsLeft, inorder, inStart, inRoot-1, mpp);
-    root->right = recurBuild(preorder, preStart+numsLeft+1, preEnd, inorder, inRoot+1, inEnd, mpp);
+    root->left = recurBuild(preorder, preStart+1, preStart+nodesLeft, inorder, inStart, inRoot-1, mpp);
+    root->right = recurBuild(preorder, preStart+nodesLeft+1, preEnd, inorder, inRoot+1, inEnd, mpp);
 
     return root;
 }
