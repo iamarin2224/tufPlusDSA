@@ -16,7 +16,9 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 - Greedy Algorithm 
 - Sliding Window
 - Stacks and Queues
-- Binary Trees (Currently Learning)
+- Binary Trees
+- Binary Search Trees
+- Heaps (Currently Learning)
 
 ---
 
