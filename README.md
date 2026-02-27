@@ -18,7 +18,8 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 - Stacks and Queues
 - Binary Trees
 - Binary Search Trees
-- Heaps (Currently Learning)
+- Heaps
+- Graphs (Currently Learning)
 
 ---
 
