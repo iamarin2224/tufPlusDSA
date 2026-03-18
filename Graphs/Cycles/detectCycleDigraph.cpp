@@ -4,19 +4,21 @@ using namespace std;
 
 //? DFS Way
 
-bool dfs(int node, vector<bool>& vis, vector<int> adj[], vector<bool>& completed){
+bool dfs(int node, vector<bool>& vis, vector<int> adj[], vector<bool>& pathVisited){
     vis[node] = true;
+
+    pathVisited[node] = true;
 
     for (int adjNode: adj[node]){
         if (!vis[adjNode]){
-            if (dfs(adjNode, vis, adj, completed)) return true;
+            if (dfs(adjNode, vis, adj, pathVisited)) return true;
         }
-        else if (!completed[adjNode]) {
+        else if (pathVisited[adjNode]) {
             return true;
         }
     }
 
-    completed[node] = true;
+    pathVisited[node] = false;
 
     return false;
 }
@@ -24,11 +26,11 @@ bool dfs(int node, vector<bool>& vis, vector<int> adj[], vector<bool>& completed
 bool isCyclic(int N, vector<int> adj[]) {
     vector<bool> vis(N, false);
 
-    vector<bool> completed(N, false);
+    vector<bool> pathVisited(N, false);
 
     for (int i=0; i<N; i++){
         if (!vis[i]){
-            if (dfs(i, vis, adj, completed)) return true;
+            if (dfs(i, vis, adj, pathVisited)) return true;
         }
     }
 
