@@ -12,7 +12,7 @@ int CheapestFlight(int n, vector<vector<int>> &flights, int src, int dst, int K)
         adj[u].push_back({v, edgeWt});
     }
 
-    // price-stops-node
+    // stops-price-nodes
     queue<pair<int, pair<int, int>>> q;
 
     vector<int> price(n, 1e9);
