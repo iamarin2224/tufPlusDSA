@@ -10,6 +10,7 @@ int minimumMultiplications(vector<int> &arr, int start, int end) {
     queue<pair<int, int>> q;
 
     unordered_set<int> st;
+    //Can use the general approach of having a minSteps array till int max, and store the steps to reach each number in it
 
     q.push({start, 0});
     st.insert(start);
