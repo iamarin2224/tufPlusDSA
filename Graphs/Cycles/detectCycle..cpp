@@ -9,6 +9,8 @@ bool detectBFS(int src, vector<bool>& vis, vector<int> adj[]){
     //stores node-parent pair
     queue<pair<int, int>> q;
 
+    q.push({src, -1});
+
     while (!q.empty()){
         int node = q.front().first;
         int parent = q.front().second;
