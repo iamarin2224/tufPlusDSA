@@ -19,7 +19,8 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 - Binary Trees
 - Binary Search Trees
 - Heaps
-- Graphs (Currently Learning)
+- Graphs
+- Dynamic Programming (Currently Learning)
 
 ---
 
