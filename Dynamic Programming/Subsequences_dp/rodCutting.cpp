@@ -110,11 +110,11 @@ int rodCutting(vector<int> &price, int N) {
 
     for (int i=0; i<N; i++){
         for (int n=1; n<=N; n++){
-            int notCut = dp[i-1][n];
-            int cut = 0;
-            if (i+1 <= n) cut = price[i] + dp[i][n-i-1];
+            int notTake = dp[i-1][n];
+            int take = 0;
+            if (i+1 <= n) take = price[i] + dp[i][n-i-1];
 
-            dp[i][n] = max(notCut, cut);
+            dp[i][n] = max(notTake, take);
         }
     }
 
@@ -133,11 +133,11 @@ int rodCutting(vector<int> &price, int N) {
         vector<int> cur(N+1, 0);
 
         for (int n=1; n<=N; n++){
-            int notCut = prev[n];
-            int cut = 0;
-            if (i+1 <= n) cut = price[i] + cur[n-i-1];
+            int notTake = prev[n];
+            int take = 0;
+            if (i+1 <= n) take = price[i] + cur[n-i-1];
 
-            cur[n] = max(notCut, cut);
+            cur[n] = max(notTake, take);
         }
 
         prev.swap(cur);
