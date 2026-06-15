@@ -20,7 +20,9 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 - Binary Search Trees
 - Heaps
 - Graphs
-- Dynamic Programming (Currently Learning)
+- Dynamic Programming
+- Tries
+- Strings (Advanced Algo) [Currently Learning]
 
 ---
 
