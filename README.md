@@ -5,7 +5,7 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 
 ---
 
-## 📌 Topics Covered So Far
+## 📌 Topics Covered
 - Basics of Programming & DSA  
 - Sorting Algorithms  
 - Arrays  
@@ -22,7 +22,7 @@ The goal of this repo is to track my progress, stay consistent, and build a stro
 - Graphs
 - Dynamic Programming
 - Tries
-- Strings (Advanced Algo) [Currently Learning]
+- Strings (Advanced Algo)
 
 ---
 
