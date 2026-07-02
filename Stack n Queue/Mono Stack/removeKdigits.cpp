@@ -9,7 +9,7 @@ string removeKdigits(string nums, int k) {
     string ans = "";
 
     for (int i=0; i<nums.size(); i++){
-        //pop is the current is smaller
+        //pop if the current is smaller
         while (!ans.empty() && ans.back()>nums[i] && k>0){
             ans.pop_back();
             k--;
