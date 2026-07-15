@@ -9,7 +9,7 @@ vector<int> computeKMP(string& s){
 
     for (int i=1; i<n; i++){
         for (int len=1; len<i; len++){
-            if (s.substr(0, len) == s.substr(i-len+1)) LPS[i] = len;
+            if (s.substr(0, len) == s.substr(i-len+1, len)) LPS[i] = len;
         }
     }
 
