@@ -53,7 +53,7 @@ bool detectDFS(int node, vector<bool>& vis, vector<int> adj[], int parent){
         if (!vis[adjNode]){
             if (detectDFS(adjNode, vis, adj, node)) return true;
         }
-        else if (adjNode != parent) return false;
+        else if (adjNode != parent) return true;
     }
 
     return false;
