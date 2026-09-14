@@ -17,7 +17,7 @@ struct Node {
 
     void deleteEnd() { eW--; }
 
-    void reducePrefix() { cP++; }
+    void reducePrefix() { cP--; }
 };
 
 class Trie {
